@@ -15,7 +15,7 @@ body::before {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/assets/images/noise.gif);
+  background-image: url(../images/noise.gif);
   z-index: -1;
   background-color: rebeccapurple;
   opacity: 0.05;
