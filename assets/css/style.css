@@ -270,6 +270,77 @@ a.btn.btn-primary-alta {
   color: #acacac;
 }
 
+
+
+.hamberger-menu-mobile {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 320px;
+    z-index: 999;
+    transition: all 0.5s ease-out;
+    background-color: #151521;
+    transform: translateX(-220px);
+    opacity: 0;
+}
+
+.hamberger-menu-mobile_show {
+    transform: translateX(0px);
+    transition: all 0.5s ease-out;
+    opacity: 1;
+}
+
+.hamberger-menu-mobile .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ffffff14;
+}
+
+.hamberger-menu-mobile .header-top .logo img {
+    max-height: 36px;
+}
+
+.hamberger-menu-mobile .close-menu button {
+    background: rgb(29, 29, 29);
+    border: 0 none;
+    color: #ffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamberger-menu-mobile .mainmenu {
+    list-style: none;
+    margin: 0;
+    padding: 15px 20px;
+    display: block;
+}
+
+.hamberger-menu-mobile .mainmenu li {
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #acacac;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.2px solid #ffffff14;
+    position: relative;
+}
+
+.hamberger-menu-mobile .mainmenu li .iconify {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
 .rn-icon-list .icon-box .badge {
   position: absolute;
   top: -6px;
@@ -385,6 +456,10 @@ button.btn.btn-primary-alta {
   color: #ffff;
   border: 0;
 }
+
+button.btn.btn-primary-alta:hover {
+    background: #00a3ff;
+  }
 
 .widget-bottom {
   border-top: 1px solid #13131d;

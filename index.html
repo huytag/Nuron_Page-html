@@ -261,15 +261,39 @@
                 </a>
               </div>
             </div>
+            <!-- button hamberger -->
             <div class="setting-option mobile-menu-bar d-block d-xl-none">
-              <div class="hamberger">
-                <a class="hamberger-button">
+              <div  class="hamberger">
+                <a id="button-hamberger" class="hamberger-button">
                   <span class="iconify" data-icon="feather:menu"></span>
                 </a>
               </div>
             </div>
             <div class="my-switcher setting-option">
               <a href="#"><img src="./assets/images/icons/sun-01.svg" /></a>
+            </div>
+            <!-- menu mobile -->
+            <div id="button-hamberger-nav" class="hamberger-menu-mobile">
+                <div class="header-top">
+                    <div class="logo logo-custom-css">
+                        <a href="#"><img src="./assets/images/icons/logo-white.png"></a>
+                    </div>
+                    <div id="close-hamberger-nav"  class="close-menu">
+                        <button>
+                            <span class="iconify" data-icon="feather:x"></span>
+                        </button>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="mainmenu">
+                        <li class="has-dropdown">Home <span class="iconify" data-icon="feather:chevron-down"></span></li>
+                        <li >About</li>
+                        <li class="has-dropdown">Explore <span class="iconify" data-icon="feather:chevron-down"></span></li>
+                        <li class="has-dropdown">Pages <span class="iconify" data-icon="feather:chevron-down"></span></li>
+                        <li class="has-dropdown">Blogs <span class="iconify" data-icon="feather:chevron-down"></span></li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
             </div>
           </div>
         </div>
@@ -492,6 +516,8 @@
     <!-- end footer area -->
     <!-- JS ============= -->
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
   </body>
 </html>
