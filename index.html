@@ -243,9 +243,16 @@
             </div>
             <div class="setting-option rn-icon-list d-block d-lg-none">
               <div class="icon-box search-mobile-icon">
-                <a href="#">
-                  <span class="iconify" data-icon="feather:search"></span>
+                <a href="#" id="button-search">
+                  <span class="iconify icon-search" data-icon="feather:search"></span>
+                  <span class="iconify icon-close-search d-none" data-icon="feather:x"></span>
                 </a>
+                <form id="header-search" class="large-mobile-blog-search">
+                    <div class="rn-search-mobile form-group">
+                        <!-- <button type="submit" class="search-button"><span class="iconify" data-icon="feather:search"></span></button> -->
+                        <input type="text" placeholder="Search ...">
+                    </div>
+                </form>
               </div>
             </div>
             <div class="setting-option header-btn rbt-site-header">
