@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="template-color">
-    <header class="rn-header header-default header-sticky">
+    <header class="rn-header header-default header-sticky sticky">
       <div class="container">
         <div class="header-inner">
           <div class="header-left">
@@ -421,8 +421,15 @@
             <div class="nice-select justify-sm-center d-flex">
               <span class="current">1 day</span>
               <span
+              id="icon-nice-select"
               class="iconify"
               data-icon="feather:chevron-down"></span>
+              <ul id="nice-select_active" class="list">
+                <li class="option selected">1 day</li>
+                <li class="option">7 Day</li>
+                <li class="option">15 Day</li>
+                <li class="option">30 Day</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -575,9 +582,116 @@
         </div>
       </div>
     </div>
-
     <!-- top-seller-end -->
 
+    <!-- top collection -->
+    <div class="rn-section-gapTop rn-colection-area">
+      <div class="container">
+        <div class="row mb--50 align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <h3 class="title">Top Collection</h3>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-12 text-sm-end">
+            <a href="#">VIEW ALL  <span class="iconify" data-icon="feather:arrow-right"></span></a>
+          </div>
+        </div>
+        <div class="row g-5 ">
+              <div class="col-lg-4 col-xl-3 col-md-6 col-12">
+                <a class="rn-collection-inner-one">
+                  <div class="collection-wrapper">
+                    <div class="collection-big-thumbnail">
+                      <img src="./assets/images/collection-lg-01.jpg">
+                    </div>
+                    <div class="collection-small-thumbnail">
+                      <img src="./assets/images/collection-sm-01.jpg">
+                      <img src="./assets/images/collection-sm-02.jpg">
+                      <img src="./assets/images/collection-sm-03.jpg">
+                    </div>
+                    <div class="collection-profile">
+                      <img src="./assets/images/author/client-15.png"> 
+                    </div>
+                    <div class="collection-deg">
+                      <h6 class="title">Cubic Trad</h6>
+                      <span class="items">27 Items</span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 col-xl-3 col-md-6 col-12">
+              <a class="rn-collection-inner-one">
+                <div class="collection-wrapper">
+                  <div class="collection-big-thumbnail">
+                    <img src="./assets/images/collection-lg-03.jpg">
+                  </div>
+                  <div class="collection-small-thumbnail">
+                    <img src="./assets/images/collection-sm-04.jpg">
+                    <img src="./assets/images/collection-sm-05.jpg">
+                    <img src="./assets/images/collection-sm-06.jpg">
+                  </div>
+                  <div class="collection-profile">
+                    <img src="./assets/images/author/client-12.png"> 
+                  </div>
+                  <div class="collection-deg">
+                    <h6 class="title">Diamond Dog</h6>
+                    <span class="items">20 Items</span>
+                  </div>
+                </div>
+              </a>
+          </div>
+
+
+          <div class="col-lg-4 col-xl-3 col-md-6 col-12">
+            <a class="rn-collection-inner-one">
+              <div class="collection-wrapper">
+                <div class="collection-big-thumbnail">
+                  <img src="./assets/images/collection-lg-02.jpg">
+                </div>
+                <div class="collection-small-thumbnail">
+                  <img src="./assets/images/collection-sm-07.jpg">
+                  <img src="./assets/images/collection-sm-08.jpg">
+                  <img src="./assets/images/collection-sm-09.jpg">
+                </div>
+                <div class="collection-profile">
+                  <img src="./assets/images/author/client-13.png"> 
+                </div>
+                <div class="collection-deg">
+                  <h6 class="title">Morgan11</h6>
+                  <span class="items">15 Items</span>
+                </div>
+              </div>
+            </a>
+        </div>
+
+
+        <div class="col-lg-4 col-xl-3 col-md-6 col-12">
+          <a class="rn-collection-inner-one">
+            <div class="collection-wrapper">
+              <div class="collection-big-thumbnail">
+                <img src="./assets/images/collection-lg-04.jpg">
+              </div>
+              <div class="collection-small-thumbnail">
+                <img src="./assets/images/collection-sm-10.jpg">
+                <img src="./assets/images/collection-sm-11.jpg">
+                <img src="./assets/images/collection-sm-12.jpg">
+              </div>
+              <div class="collection-profile">
+                <img src="./assets/images/author/client-14.png"> 
+              </div>
+              <div class="collection-deg">
+                <h6 class="title">Orthogon</h6>
+                <span class="items">10 Items</span>
+              </div>
+            </div>
+          </a>
+      </div>
+      
+        </div>
+      </div>
+    </div>
+
+    <!-- end top collection -->
 
 
     <!-- start footer area -->

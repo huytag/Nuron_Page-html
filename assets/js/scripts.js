@@ -4,6 +4,7 @@
       onShowHamberger();
       onCloseHamberger();
       onShowBtnSearchMobile();
+      onClickSelect();
     });
 
     function onShowHamberger() {
@@ -55,6 +56,23 @@
                 }
             })
         }
+    }
+    function onClickSelect() {
+      const el_button = $(".nice-select");
+      let click = false;
+      if (el_button.length > 0) {
+        el_button.on("click",function (e) {
+          if(click) {
+            click = false;
+            $("#nice-select_active").removeClass("is-active");
+            $("#icon-nice-select").removeClass("is-active");
+          } else {
+            click = true;
+            $("#nice-select_active").addClass("is-active");
+            $("#icon-nice-select").addClass("is-active");
+          }
+        })
+      }
     }
   });
 })(jQuery);
