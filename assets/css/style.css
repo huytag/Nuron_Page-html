@@ -49,16 +49,10 @@ body::before {
   backdrop-filter: blur(10px);
 }
 
-.rn-header.header-sticky-none {
-  backdrop-filter: none;
-}
-
 .rn-header.sticky {
   background-color: #1515218c;
-  position: sticky !important;
   top: 0;
   display: block;
-  box-shadow: var(--shadow-1);
 }
 
 .header-default .header-inner {
@@ -317,7 +311,6 @@ a.btn.btn-primary-alta {
 .hamberger-menu-mobile .close-menu button {
   background: rgb(29, 29, 29);
   border: 0 none;
-  color: #ffffff;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -328,6 +321,10 @@ a.btn.btn-primary-alta {
   align-items: center;
 }
 
+.hamberger-menu-mobile .close-menu button .iconify {
+  color: #ffffff;
+}
+
 .hamberger-menu-mobile .mainmenu {
   list-style: none;
   margin: 0;
@@ -335,7 +332,7 @@ a.btn.btn-primary-alta {
   display: block;
 }
 
-.hamberger-menu-mobile .mainmenu li {
+.hamberger-menu-mobile .mainmenu li a {
   padding: 8px 0;
   font-size: 16px;
   font-weight: 500;
@@ -344,6 +341,25 @@ a.btn.btn-primary-alta {
   justify-content: space-between;
   border-bottom: 1.2px solid #ffffff14;
   position: relative;
+}
+
+.hamberger-menu-mobile .mainmenu .submenu {
+  list-style: none;
+  padding-left: 10px;
+  transition: 0.3s;
+  display: none;
+}
+
+.hamberger-menu-mobile .mainmenu .submenu.is-active {
+  display: block;
+}
+
+.d-block {
+  display: block;
+}
+
+.hamberger-menu-mobile .mainmenu .submenu li {
+  font-size: 15px;
 }
 
 .hamberger-menu-mobile .mainmenu li .iconify {
@@ -1046,6 +1062,10 @@ button.btn.btn-primary-alta:hover {
   .slider-one h2.title {
     font-size: 50px;
   }
+  .rn-header.header-sticky {
+    position: relative !important;
+    backdrop-filter: none;
+  }
 }
 @media only screen and (max-width: 992px) {
   .coppy-right-one .copyright-left {
@@ -1103,6 +1123,9 @@ button.btn.btn-primary-alta:hover {
     width: 100%;
     border: 1px solid transparent;
   }
+  .rn-collection-inner-one .collection-wrapper .collection-profile {
+    top: 48%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1130,6 +1153,9 @@ button.btn.btn-primary-alta:hover {
   .coppy-right-one .copyright-left .privacy::before {
     width: 0px;
   }
+  .rn-collection-inner-one .collection-wrapper .collection-profile {
+    top: 56%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .mt_mobile--40 {
@@ -1137,6 +1163,13 @@ button.btn.btn-primary-alta:hover {
   }
   .rn-header .logo-thumbnail::after {
     width: 0px;
+  }
+  .rn-service-one .icon {
+    position: absolute;
+    top: -30px;
+    right: 5px;
+    z-index: 2;
+    overflow: hidden;
   }
 }
 
@@ -1164,5 +1197,8 @@ button.btn.btn-primary-alta:hover {
   .top-seller-inner-one .top-seller-wrapper .top-seller-content {
     margin-left: 0px;
     margin-top: 10px;
+  }
+  .rn-collection-inner-one .collection-wrapper .collection-profile {
+    top: 50%;
   }
 }
