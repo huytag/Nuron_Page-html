@@ -840,6 +840,198 @@ button.btn.btn-large {
 
 /* collection area */
 
+/* news item */
+.rn-new-items h3.title {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.rn-new-items a {
+  color: #acacac;
+  font-size: 14px;
+}
+
+.rn-new-items a .iconify {
+  font-size: 16px;
+}
+
+.rn-new-items .product-style-one {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #242435;
+  position: relative;
+  height: 100%;
+  z-index: 5;
+}
+
+.product-style-one::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #242435;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.rn-new-items .product-style-one:before {
+  content: "";
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  background-image: linear-gradient(100deg, #13131d, #0398ed);
+  background-repeat: repeat-x;
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.rn-new-items .product-style-one:hover::before {
+  transform: translate(-10px,10px);
+}
+
+.rn-new-items .card-thumbnail {
+  overflow: hidden;
+  border-radius: 5px;
+  /* margin: 15px; */
+}
+
+.rn-new-items .card-thumbnail a img {
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+  padding: 0px;
+  transition: 0.5s;
+  height: auto;
+}
+ 
+.rn-new-items .product-style-one .product-share-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .profile-share {
+  display: flex;
+  align-items: center;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .profile-share a {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .profile-share a img {
+  max-width: 35px;
+  border-radius: 50%;
+  border: 2px solid #ffffff14;
+  transition: 0.3s;
+  position: relative;
+  margin-right: -12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .profile-share a img:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  margin-top: -10px;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .profile-share .more-author-text {
+  padding-left: 20px;
+  margin-left: 0px;
+  color: #acacac;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .profile-share .more-author-text:hover {
+  color: #00a3ff;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .share-btn {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .share-btn .icon {
+  border: 0;
+  height: 35px;
+  width: 35px;
+  transition: 0.3s;
+  border-radius: 60%;
+  background-color: transparent;
+  color: #acacac;
+}
+
+.rn-new-items .product-style-one .product-share-wrapper .share-btn .icon:hover {
+  background-color: #212e48;
+
+}
+
+.rn-new-items .product-style-one a .product-name {
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.4s;
+}
+
+.rn-new-items .product-style-one .latest-bid {
+  font-family: 400;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.rn-new-items .product-style-one .bid-react-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.rn-new-items .product-style-one .bid-react-area .last-bid {
+  color: #00a3ff;
+  font-weight: 600;
+}
+
+.rn-new-items .product-style-one .bid-react-area .react-area {
+  transition: 0.3s;
+  padding: 4px 7px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.rn-new-items .product-style-one .bid-react-area .react-area:hover {
+  background: #00a3ff;
+  color: #ffff;
+}
+
+.rn-new-items .product-style-one .bid-react-area .react-area svg {
+  margin-right: 3px;
+}
+
+.rn-new-items .product-style-one:hover .card-thumbnail a img {
+  transform: scale(1.15);
+}
+
+/* news item */
+
+
 /* footer area */
 
 .rn-section-gap {
@@ -1170,6 +1362,9 @@ button.btn.btn-primary-alta:hover {
     right: 5px;
     z-index: 2;
     overflow: hidden;
+  }
+  .rn-colection-area .text-sm-end {
+    text-align: left;
   }
 }
 
