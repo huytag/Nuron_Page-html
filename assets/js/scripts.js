@@ -13,6 +13,7 @@
         el_hamber.on("click", function (e) {
           if (click) {
             click = false;
+            $(".rn-header").removeClass("header-sticky-none");
             $("#button-hamberger-nav").removeClass(
               "hamberger-menu-mobile_show"
             );
@@ -20,6 +21,7 @@
           else {
             click = true;
             $("#button-hamberger-nav").addClass("hamberger-menu-mobile_show");
+            $(".rn-header").addClass("header-sticky-none");
           }
         });
       }
@@ -30,6 +32,7 @@
       if (el_hamber.length > 0) {
         el_hamber.on("click", function (e) {
           $("#button-hamberger-nav").removeClass("hamberger-menu-mobile_show");
+          $(".rn-header").removeClass("header-sticky-none");
         });
       }
     }
