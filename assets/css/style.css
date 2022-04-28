@@ -1194,13 +1194,29 @@ button.btn.btn-primary-alta:hover {
 
 .coppy-right-one .copyright-left .privacy li a {
   margin: 0;
-  padding: 0px 12px;
+  /* padding: 0px 12px; */
+  margin-right: 12px;
   cursor: pointer;
   color: #acacac;
 }
 
+.coppy-right-one .copyright-left .privacy li a::after {
+  content: "";
+  height: 2px;
+  background: #00a3ff;
+  /* left: 15%; */
+  position: absolute;
+  display: block;
+  width: 0px;
+  transition: width 0.3s ease-in-out
+}
+
 .coppy-right-one .copyright-left .privacy li a:hover {
   color: #00a3ff;
+}
+
+.coppy-right-one .copyright-left .privacy li a:hover::after {
+  width: 40px;
 }
 
 .coppy-right-one .copyright-right {
