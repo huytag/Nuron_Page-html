@@ -1,0 +1,136 @@
+.left-header-style {
+    color: #fff;
+    position: fixed;
+    left: 0;
+    width: 290px;
+    background: #24243557;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+    z-index: 1;
+    transform: translateX(0px);
+    padding: 50px 40px 40px;
+    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-header-style .logo-area {
+    margin-bottom: 50px;
+}
+
+.left-header-style .logo-area a img {
+    max-width: 110px;
+}
+
+.left-header-style .sidebar-nav-wrapper {
+    min-height: 500px;
+}
+
+.left-header-style .mainmenu-nav .mainmenu {
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.left-header-style .mainmenu-nav .mainmenu .nav-item a {
+    padding: 10px 0;
+    margin: 0px;
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    transition: 0.3s;
+    font-size: 16px;
+    color: #acacac;
+    cursor: pointer;
+}
+
+.left-header-style .mainmenu-nav .mainmenu .nav-item {
+    position: relative;
+}
+
+.left-header-style .mainmenu-nav .mainmenu .nav-item a .iconify {
+    background: #212e48;
+    margin-right: 15px;
+    padding: 7px;
+    border-radius: 4px;
+    width: 29px;
+    height: auto;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.left-header-style .mainmenu-nav .mainmenu .nav-item a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 2px;
+    height: 50%;
+    background: #00a3ff;
+    top:43%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.left-header-style .mainmenu-nav .mainmenu .nav-item a:hover {
+    color: #00a3ff;
+}
+
+.left-header-style .mainmenu-nav .mainmenu .nav-item a:hover .iconify{
+    background: #00a3ff;
+}
+
+.left-header-style .mainmenu-nav .mainmenu .nav-item:hover a::after {
+    opacity: 1;
+    visibility: inherit;
+}
+
+.left-header-style .auther-profile {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: #24243557;
+}
+
+.left-header-style .auther-profile .thumbnail {
+    margin-top: -50px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.left-header-style .auther-profile .thumbnail::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #31a24c;
+    border-radius: 50%;
+    z-index: 5;
+    top:70%;
+    right: 67px;
+}
+
+
+.left-header-style .auther-profile .thumbnail img {
+    border-radius: 50%;
+    max-width: 66px;
+    border: 3px solid #ffffff14;
+}
+
+.left-header-style .auther-profile .au-content .name {
+    margin-bottom: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.left-header-style .auther-profile .au-content .bcl {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: #acacac;
+}
+
+.left-header-style .auther-profile .au-content .bcl .value {
+    color: #00a3ff;
+}
