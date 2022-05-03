@@ -228,39 +228,68 @@
   background: #00a3ff;
 }
 .pb--70 {
-    padding-bottom: 70px;
+  padding-bottom: 70px;
 }
+
+.eight-section .discover-filter-button {
+  background: transparent;
+  width: auto;
+  font-size: 16px;
+  border: 1px solid #ffffff14;
+  height: 47px;
+  border-radius: 500px;
+  padding: 0 26px;
+  text-align: center;
+  margin: 5px;
+  min-width: 95px;
+  color: #acacac;
+  transition: 0.3s;
+}
+
+.eight-section .discover-filter-button.is-active {
+  background: #212e48;
+  color: #00a3ff;
+  border-color: #212e48;
+}
+
+.eight-section .discover-filter-button:hover {
+  background: #212e48;
+  color: #00a3ff;
+  border-color: #212e48;
+}
+
+
 /* content right */
 
 /* footer */
 .rn-footer-area {
-    padding-left: 290px;
+  padding-left: 290px;
 }
 
 .rn-footer-area .inner .logo img {
-    max-width: 120px;
+  max-width: 120px;
 }
 
 .rn-footer-area .inner {
-    border-top: 1px solid #ffffff14;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  border-top: 1px solid #ffffff14;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .rn-footer-area .inner .description {
-    margin: 0;
-    margin-top: 30px;
-    padding: 0;
-    font-size: 18px;
-    color: #acacac;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  font-size: 18px;
+  color: #acacac;
 }
 
 .rn-footer-area .inner .description a {
-    color: #acacac;
+  color: #acacac;
 }
 
 .rn-footer-area .inner .description a:hover {
-    color: #00a3ff;
+  color: #00a3ff;
 }
 
 /* footer */
@@ -273,7 +302,7 @@
     padding-left: 0px;
   }
   .rn-footer-area {
-      padding-left: 0px;
+    padding-left: 0px;
   }
   .rn-footer-area.pr--40px {
     padding-right: 0px;
@@ -281,11 +310,20 @@
   .rn-nft-mid-wrapper.pr--40px {
     padding-right: 0px;
   }
+  .eight-section .text-sm-end {
+    text-align: left !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .rn-top-bar-area .contact-area {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .rn-nft-mid-wrapper .rn-top-bar-area {
+    padding: 25px 10px;
   }
 }
