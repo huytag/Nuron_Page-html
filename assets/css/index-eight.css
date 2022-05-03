@@ -8,6 +8,7 @@
     overflow-y: auto;
     top: 0;
     z-index: 1;
+    height: 100vh;
     transform: translateX(0px);
     padding: 50px 40px 40px;
     transition: all 0.3s ease-in-out;
