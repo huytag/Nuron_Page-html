@@ -425,11 +425,13 @@
   border-radius: 50%;
   transition: 0.3s;
   margin-right: -10px;
+  z-index: 3;
 }
 
 .rn-banner-area .item-description .profile-share a img:hover {
   transform: scale(1.2);
   margin-top: -5px;
+  z-index: 5;
 }
 
 .rn-banner-area .item-description p {
@@ -484,6 +486,46 @@
   height: 14px;
   background: transparent;
   border-color: #00a3ff;
+}
+
+.rn-banner-area .profile-share a {
+  position: relative;
+}
+
+.rn-banner-area .profile-share a .in_tooltip {
+  position: absolute;
+  padding: 5px 5px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100px;
+  background: #212e48;
+  top: -100%;
+  right: -130%;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(10px);
+}
+
+.rn-banner-area .profile-share a .in_tooltip::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #212e48;
+}
+
+.rn-banner-area .profile-share a .in_tooltip span {
+  color: #fff;
+}
+
+.rn-banner-area .item-description .profile-share a:hover .in_tooltip {
+  opacity: 1;
+  transform: translateY(-20px);
 }
 
 /* content right */
